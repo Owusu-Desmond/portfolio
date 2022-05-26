@@ -98,3 +98,11 @@ a {
   max-width: 150px;
   align-items: center;
 }
+
+.links {
+  list-style: none;
+}
+
+.links > li {
+  display: inline-block;
+}
