@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A personal portfolio website to understand how to parse a Figma design to create a UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Owusu-Desmond/portfilio-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Owusu-Desmond/portfilio-website/issues"
+  },
+  "homepage": "https://github.com/Owusu-Desmond/portfilio-website#readme",
+  "devDependencies": {
+    "hint": "^6.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
