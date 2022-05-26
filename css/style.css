@@ -58,24 +58,23 @@ a {
 }
 
 .description {
-  width: 327px;
+  width: 319px;
   height: 150px;
   color: #172b4d;
   font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 43px;
   line-height: 52px;
 }
 
 .aboutMe {
-  max-width: 327px;
   color: #344563;
   font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .main {
@@ -92,17 +91,23 @@ a {
   gap: 20px;
 }
 
+.letsConnect {
+  height: 24px;
+  font-family: 'poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 .networkContent {
   display: flex;
+  list-style: none;
   justify-content: space-between;
   max-width: 150px;
   align-items: center;
-}
-
-.links {
-  list-style: none;
-}
-
-.links > li {
-  display: inline-block;
 }
