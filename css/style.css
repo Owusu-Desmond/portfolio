@@ -113,12 +113,15 @@ a {
 }
 
 .workSection {
+  display: grid;
   margin: 20px;
   position: relative;
   top: 150px;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   left: 24px;
   margin-top: 50px;
@@ -185,6 +188,7 @@ a {
 }
 
 .card-skills-btns-container {
+  list-style: none;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -301,12 +305,12 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-.summary-drop-up svg {
+.summary-chevron-up svg {
   opacity: 0.5;
 }
 
-.summary-drop-up,
-.summary-dropdown {
+.summary-chevron-up,
+.summary-chevron-down {
   pointer-events: none;
   position: absolute;
   top: 0.75em;
@@ -319,18 +323,18 @@ summary:focus {
   outline: none;
 }
 
-summary:hover .summary-drop-up svg {
+summary:hover .summary-chevron-up svg {
   opacity: 1;
 }
 
-.languages {
+.langs {
   cursor: default;
   padding: 1em;
   font-weight: 300;
   line-height: 1.5;
 }
 
-.language {
+.langg {
   list-style: none;
   display: flex;
   align-items: center;
@@ -346,7 +350,3 @@ summary:hover .summary-drop-up svg {
   font-size: 15px;
   font-weight: 500;
 }
-
-/* End of details */
-
-/* End of About MYself section */
