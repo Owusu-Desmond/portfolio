@@ -99,15 +99,254 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  margin-top: 20px;
 }
 
 .networkContent {
   display: flex;
+  margin-top: 20px;
   list-style: none;
   justify-content: space-between;
   max-width: 150px;
   align-items: center;
+  gap: 10px;
+}
+
+.workSection {
+  display: grid;
+  margin: 20px;
+  position: relative;
+  top: 150px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  left: 24px;
+  margin-top: 50px;
+  border-radius: 16px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-title {
+  width: 200px;
+  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skills span:first-child {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #344563;
+}
+
+.dot {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #c1c7d0;
+}
+
+.skills span:nth-child(3),
+.skills span:nth-child(5) {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.card-text {
+  max-width: 250px;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+}
+
+.card-skills-btns-container {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-skills-btn {
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 4px 12px 4px 12px;
+  background-color: #ebebff;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #303b9b;
+}
+
+.see-projects-btn {
+  margin-top: 15px;
+  left: 24px;
+  top: 114px;
+  border-radius: 8px;
+  padding: 16px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background-color: transparent;
+  border: 1px solid #396df2;
+}
+
+/* css for about myself section */
+.aboutMyself-container {
+  margin-top: 200px;
+  background: #fff;
+  width: 100%;
+  border-radius: 0 50px 0 0;
+  height: 800px;
+}
+
+.aboutMyself-content {
+  position: relative;
+  top: 114px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.about-title {
+  display: flex;
+  max-width: 205px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.aboutMyself-discription {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #344563;
+}
+
+.aboutMyself-content > button {
+  margin-top: 10px;
+  height: 48px;
+  width: 162px;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+}
+
+.languages-container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* datails  */
+details {
+  font-size: 1rem;
+  background: #ffff;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+summary {
+  user-select: none;
+  list-style: none;
+  padding: 1em;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary-chevron-up svg {
+  opacity: 0.5;
+}
+
+.summary-chevron-up,
+.summary-chevron-down {
+  pointer-events: none;
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  background: #ffff;
+  display: block;
+}
+
+summary:focus {
+  outline: none;
+}
+
+summary:hover .summary-chevron-up svg {
+  opacity: 1;
+}
+
+.langs {
+  cursor: default;
+  padding: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.langg {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f7f7f9;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.langgg {
+  color: #253858;
+  font-size: 15px;
+  font-weight: 500;
 }
