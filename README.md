@@ -8,6 +8,19 @@ In this Portfolio Mobile Setup, I did the following
 - Added styling by designing as much as possible (e.g. font, colors, images, tests, margins) using the [template 1 in    Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1) .
 - Ensured there was no linter error.
 
+## Getting Started
+
+step 1:
+Clone this repo locally using git in the command line and the following command
+
+git clone https://github.com/Owusu-Desmond/portfolio-website.git
+
+Alternatively, you can just download the complete zip file and extract the folder in your directory
+
+Step 2:
+Copy All Project files and run using VSCODE. HTML can be viewed in browser.
+
+
 ## Build With
 
 - Languages(`HTML` and `CSS`)
