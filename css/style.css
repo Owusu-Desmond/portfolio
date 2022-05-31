@@ -350,3 +350,125 @@ summary:hover .summary-chevron-up svg {
   font-size: 15px;
   font-weight: 500;
 }
+
+.contact-section {
+  width: 100%;
+  margin-top: 70px;
+  background-image: url("../images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #6070ff;
+  border-radius: 50px 0 0 0;
+  z-index: -999;
+}
+
+.title-content-container {
+  padding-top: 107px;
+  margin: auto 24px;
+}
+
+.title-content-container > .title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+}
+
+.title-content-container > .content {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-top: 12px;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 20px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.form-group > input,
+.form-group > textarea {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  width: 327px;
+  border-radius: 8px;
+}
+
+.form-group > input {
+  height: 48px;
+}
+
+form > .submit {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  height: 48px;
+  width: 140px;
+  margin-top: 22px;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background: #fff;
+  border: none;
+}
+
+.form-group > div {
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+}
+
+/* validate contact form */
+textarea:valid,
+.form-group > input:valid {
+  border: 2px solid #008000;
+}
+
+textarea:invalid,
+.form-group > input:invalid {
+  border: 2px solid #f00;
+}
+
+textarea:invalid + div::before {
+  content: '✖';
+  color: #f00;
+}
+
+textarea:valid + div::before {
+  content: '✓';
+  color: #008000;
+}
+
+/* footer line */
+.footer-line-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.footer-line {
+  height: 5px;
+  width: 134px;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+}
