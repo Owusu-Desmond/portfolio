@@ -439,20 +439,22 @@ form > .submit {
 
 /* validate contact form */
 textarea:valid,
-.form-group > input:valid {
+input:valid {
   border: 2px solid #008000;
 }
 
 textarea:invalid,
-.form-group > input:invalid {
+input:invalid {
   border: 2px solid #f00;
 }
 
-textarea:invalid + div::before {
+textarea:invalid + div::before,
+input:invalid + div::before {
   content: '✖';
   color: #f00;
 }
 
+input:valid + div::before,
 textarea:valid + div::before {
   content: '✓';
   color: #008000;
