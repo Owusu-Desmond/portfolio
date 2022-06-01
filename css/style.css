@@ -432,35 +432,6 @@ summary:hover .summary-chevron-up svg {
   height: 48px;
 }
 
-.form-group > div {
-  text-align: center;
-  font-size: 30px;
-  padding: 5px;
-}
-
-/* validate contact form */
-textarea:valid,
-input:valid {
-  border: 2px solid #008000;
-}
-
-textarea:invalid,
-input:invalid {
-  border: 2px solid #f00;
-}
-
-textarea:invalid + div::before,
-input:invalid + div::before {
-  content: '✖';
-  color: #f00;
-}
-
-input:valid + div::before,
-textarea:valid + div::before {
-  content: '✓';
-  color: #008000;
-}
-
 .form-submit-btn {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
