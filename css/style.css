@@ -91,6 +91,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .letsConnect {
@@ -116,18 +118,14 @@ a {
 
 /* the work section */
 .work-section-container {
-  display: grid;
-  margin: 20px;
-  position: relative;
-  top: 150px;
+  margin-top: 10px;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  left: 24px;
-  margin-top: 50px;
+  width: 80%;
+  display: grid;
+  grid-gap: 20px;
+  margin: 88px auto 0;
   border-radius: 16px;
   padding: 16px;
   background: #fff;
@@ -140,7 +138,6 @@ a {
 }
 
 .card-title {
-  width: 200px;
   color: #172b4d;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -181,7 +178,6 @@ a {
 }
 
 .card-text {
-  max-width: 250px;
   margin-top: 10px;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -269,7 +265,7 @@ a {
   color: #344563;
 }
 
-.aboutMyself-content > button {
+.aboutMyself-content > div > button {
   margin-top: 10px;
   height: 48px;
   width: 162px;
@@ -493,4 +489,32 @@ textarea:valid + div::before {
   border-radius: 10px;
   background-color: black;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .background {
+    background-image: url('../images/Header-bg-desktop.svg');
+  }
+
+  .Menu {
+    display: none;
+  }
+
+  .navItem {
+    display: inline-block;
+    font-size: large;
+    padding: 0 20px 0;
+  }
+
+  .card {
+    grid-template-columns: 1fr 1fr;
+    margin: 100px auto;
+    padding: 24px;
+  }
+
+  .card2 > .card-content,
+  .card4 > .card-content {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
 }
