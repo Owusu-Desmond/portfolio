@@ -498,6 +498,14 @@ summary:hover .summary-chevron-up svg {
     grid-row-start: 1;
   }
 
+  .lang-text-icon {
+    display: inline-block;
+  }
+
+  .laug-text {
+    display: block;
+  }
+
   /* @media query for about section */
   .aboutMyself-content {
     grid-template-columns: 1fr 1fr;
