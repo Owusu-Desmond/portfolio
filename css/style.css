@@ -10,6 +10,7 @@ body {
   font-family: 'poppins', sans-serif;
 }
 
+/* The header section  */
 .Header {
   padding: 20px 0;
 }
@@ -68,6 +69,7 @@ a {
   line-height: 52px;
 }
 
+/* the main section  */
 .aboutMe {
   color: #344563;
   font-family: 'poppins', sans-serif;
@@ -112,7 +114,8 @@ a {
   gap: 10px;
 }
 
-.workSection {
+/* the work section */
+.work-section-container {
   display: grid;
   margin: 20px;
   position: relative;

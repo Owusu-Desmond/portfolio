@@ -64,9 +64,8 @@
       </section>
     </main>
     <!-- work section -->
-    <section class="work">
-      <div class="container">
-        <div class="workSection">
+    <section class="work-section">
+      <div class="work-section-container">
           <!-- Card 1 section -->
           <div class="card">
             <img
@@ -193,7 +192,6 @@
               </button>
             </div>
           </div>
-        </div>
       </div>
     </section>
     <!-- End of work section-->
@@ -202,45 +200,104 @@
 
     <section class="aboutMyself-container">
       <div class="aboutMyself-content">
-        <h6 class="about-title">About Myself</h6>
-        <p class="aboutMyself-discription">
-          I'm a software developer! I can help you build a product, feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don't hestiate to contact
-          me.
-        </p>
-        <p class="letsConnect">LET'S CONNECT</p>
-        <ul class="networkContent">
-          <li>
-            <a href="https://twitter.com/DesmondOwusuDev"
-              ><img src=" ./images/twitter.svg" alt="twitter"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/desmond-owusu-ansah-09274a223/"
-              ><img src=" ./images/Linkedin-icon.svg" alt="Linkedin"
-            /></a>
-          </li>
-          <li>
-            <a href="https://github.com/Owusu-Desmond"
-              ><img src=" ./images/github.svg" alt="github"
-            /></a>
-          </li>
-          <li>
-            <a href="#"><img src=" ./images/M-icon.svg" alt="M-icon" /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src=" ./images/hand-raise.svg" alt="handraise icon"
-            /></a>
-          </li>
-        </ul>
-        <button type="button">Get my resume</button>
-        <!-- Languages section-->
-        <div class="languages-container">
+        <!-- about myself content that contain description and networks -->
+        <div>
+          <h6 class="about-title">About Myself</h6>
+          <p class="aboutMyself-discription">
+            I'm a software developer! I can help you build a product, feature or
+            website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don't hestiate to
+            contact me.
+          </p>
+          <p class="letsConnect">LET'S CONNECT</p>
+          <ul class="networkContent">
+            <li>
+              <a href="https://twitter.com/DesmondOwusuDev"
+                ><img src=" ./images/twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/desmond-owusu-ansah-09274a223/"
+                ><img src=" ./images/Linkedin-icon.svg" alt="Linkedin"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/Owusu-Desmond"
+                ><img src=" ./images/github.svg" alt="github"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src=" ./images/M-icon.svg" alt="M-icon" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src=" ./images/hand-raise.svg" alt="handraise icon"
+              /></a>
+            </li>
+          </ul>
+          <button type="button">Get my resume</button>
+        </div>
+        <!-- about myself content that contain language, framework and skills section -->
+        <div>
+          <!-- Languages section-->
+          <div class="languages-container">
+            <details>
+              <summary>
+                Languages
+                <label class="summary-chevron-up">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-dropdown"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </label>
+              </summary>
+              <div class="summary-chevron-down">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </div>
+              <ul class="langs-list-container">
+                <li class="lang-text-icon">
+                  <img src="./images/JS-icon.svg" alt="JS-icon" />
+                  <span class="laug-text">JavaScript</span>
+                </li>
+                <li class="lang-text-icon">
+                  <img src="./images/HTML-icon.svg" alt="HTML-icon" />
+                  <span class="laug-text">CSS</span>
+                </li>
+                <li class="lang-text-icon">
+                  <img src="./images/CSS-icon.svg" alt="CSS-icon" />
+                  <span class="laug-text">CSS</span>
+                </li>
+              </ul>
+            </details>
+          </div>
+          <!-- frameworks section -->
           <details>
             <summary>
-              Languages
+              FrameWorks
               <label class="summary-chevron-up">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -252,7 +309,7 @@
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-dropdown"
+                  class="feather feather-chevron-down"
                 >
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
@@ -274,99 +331,46 @@
                 <polyline points="18 15 12 9 6 15"></polyline>
               </svg>
             </div>
-            <ul class="langs-list-container">
-              <li class="lang-text-icon">
-                <img src="./images/JS-icon.svg" alt="JS-icon" />
-                <span class="laug-text">JavaScript</span>
-              </li>
-              <li class="lang-text-icon">
-                <img src="./images/HTML-icon.svg" alt="HTML-icon" />
-                <span class="laug-text">CSS</span>
-              </li>
-              <li class="lang-text-icon">
-                <img src="./images/CSS-icon.svg" alt="CSS-icon" />
-                <span class="laug-text">CSS</span>
-              </li>
-            </ul>
+          </details>
+          <!-- skills section -->
+          <details>
+            <summary>
+              Skills
+              <label class="summary-chevron-up">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-down"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </label>
+            </summary>
+            <div class="summary-chevron-down">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-up"
+              >
+                <polyline points="18 15 12 9 6 15"></polyline>
+              </svg>
+            </div>
           </details>
         </div>
-        <!-- languages section end here -->
-        <!-- frameworks section -->
-        <details>
-          <summary>
-            FrameWorks
-            <label class="summary-chevron-up">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-chevron-down"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </label>
-          </summary>
-          <div class="summary-chevron-down">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-chevron-up"
-            >
-              <polyline points="18 15 12 9 6 15"></polyline>
-            </svg>
-          </div>
-        </details>
-        <details>
-          <summary>
-            Skills
-            <label class="summary-chevron-up">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-chevron-down"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </label>
-          </summary>
-          <div class="summary-chevron-down">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-chevron-up"
-            >
-              <polyline points="18 15 12 9 6 15"></polyline>
-            </svg>
-          </div>
-        </details>
-        <!--End of Frameworks-->
       </div>
     </section>
     <!-- the contact section -->
