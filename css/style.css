@@ -45,6 +45,24 @@ a {
   font-family: 'poppins', sans-serif;
   color: #6070ff;
   font-weight: 600;
+  animation-name: logo-animation;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+}
+
+@keyframes logo-animation {
+  from {
+    padding-left: 0;
+  }
+
+  50% {
+    padding-left: 30%;
+  }
+
+  to {
+    padding-left: 0;
+  }
 }
 
 .Menu {
@@ -56,6 +74,18 @@ a {
   display: none;
   font-size: large;
   padding: 5px;
+}
+
+.navItem a {
+  font-weight: 400;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.navItem a:hover {
+  color: #6070ff;
+  outline: 1px solid #6070ff;
+  padding: 10px;
 }
 
 .description {
@@ -272,7 +302,7 @@ a {
 .aboutMyself-content > div > button {
   margin-top: 10px;
   height: 48px;
-  width: 162px;
+  width: fit-content;
   border-radius: 8px;
   padding: 12px;
   border: 1px solid #6070ff;
@@ -287,11 +317,13 @@ a {
   letter-spacing: 0.03em;
   color: #396df2;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 
-.aboutMyself-content > button:hover {
+.aboutMyself-content > div > button:hover {
   background-color: #6070ff;
   color: #fff;
+  font-size: 20px;
 }
 
 .languages-container {
@@ -513,16 +545,27 @@ summary:hover .summary-chevron-up svg {
     font-size: 20px;
   }
   /* set animation for card image on destop version */
-  .card-image:hover {
+  .card div:hover > .card-image {
     animation: animate 1s;
     animation-delay: 0.5s;
     animation-timing-function: ease-in;
   }
 
   @keyframes animate {
-    0% {transform: rotate(60deg);}
-    50% {transform: rotate(-60deg);}
-    100% {transform: rotate(90deg);}
+    from {
+      transform: rotate(0deg); 
+      width: 100%;
+    }
+
+    50% {
+      transform: rotate(-20deg);
+      width: 90%;
+    }
+
+    to {
+      transform: rotate(0deg);
+      width: 100%;
+    }
   }
 
   .lang-text-icon {
