@@ -533,17 +533,19 @@ summary:hover .summary-chevron-up svg {
     grid-row-start: 1;
   }
 
-  .see-projects-btn:active{
+  .see-projects-btn:active {
     transform: translateY(6px);
   }
 
-  .see-projects-btn:hover{
+  .see-projects-btn:hover {
     background-color: #6070ff;
     color: white;
   }
-  .card-skills-btn:hover{
+
+  .card-skills-btn:hover {
     font-size: 20px;
   }
+
   /* set animation for card image on destop version */
   .card div:hover > .card-image {
     animation: animate 1s;
@@ -553,7 +555,7 @@ summary:hover .summary-chevron-up svg {
 
   @keyframes animate {
     from {
-      transform: rotate(0deg); 
+      transform: rotate(0deg);
       width: 100%;
     }
 
@@ -592,21 +594,25 @@ summary:hover .summary-chevron-up svg {
     background-size: cover;
     padding-bottom: 50px;
   }
+
   .form-group > input:focus,
   .form-group > textarea:focus {
     font-size: 20px;
     background-color: #e5e5e5;
     border: 2px solid #00f;
   }
+
   /* center form submit button */
   form > div:nth-child(4) {
     display: flex;
     justify-content: center;
   }
-  .form-submit-btn{
+
+  .form-submit-btn {
     transition: 1s;
   }
-  .form-submit-btn:hover{
+
+  .form-submit-btn:hover {
     background-color: #00f;
     color: white;
     font-size: 20px;
