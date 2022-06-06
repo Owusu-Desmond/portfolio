@@ -20,6 +20,10 @@ Alternatively, you can just download the complete zip file and extract the folde
 Step 2:
 Copy All Project files and run using VSCODE. HTML can be viewed in browser.
 
+## Development 
+
+Access the the online version of my application with this link 
+[Desmond Owusu](https://owusu-desmond.github.io/portfolio/)
 
 ## Build With
 
