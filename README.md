@@ -1,11 +1,11 @@
-# Portfolio Mobile Setup
+# Portfolio App
 
 ## Description
 
-In this Portfolio Mobile Setup, I did the following
+This Portfolio App, include the following process
 
 - Added the page layout in the index.html file
-- Added styling by designing as much as possible (e.g. font, colors, images, tests, margins) using the [template 1 in    Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1) .
+- Added styling by designing as much as possible (e.g. font, colors, images, tests, margins) using the [template 1 in Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1) .
 - Ensured there was no linter error.
 
 ## Getting Started
@@ -13,25 +13,36 @@ In this Portfolio Mobile Setup, I did the following
 step 1:
 Clone this repo locally using git in the command line and the following command
 
-git clone https://github.com/Owusu-Desmond/portfolio-website.git
+```
+git clone https://github.com/Owusu-Desmond/portfolio.git
+```
 
 Alternatively, you can just download the complete zip file and extract the folder in your directory
 
 Step 2:
 Copy All Project files and run using VSCODE. HTML can be viewed in browser.
 
+## Deployment
+
+Access the the online version of my application with this link
+[Live Demo](https://owusu-desmond.github.io/portfolio/)
 
 ## Build With
 
-- Languages(`HTML` and `CSS`)
+-Editor : Visual studio code
 
-## Author 
+- Languages : (`HTML` and `CSS`)
+
+## Author
+
 Desmond Owusu Ansah
+
 - Github [@Owusu-Desmond](https://github.com/Owusu-Desmond)
 - Twitter [@DesmondOwusuDev](https://twitter.com/DesmondOwusuDev)
 - LinkedIn [@desmond-owusu-ansah](https://www.linkedin.com/in/desmond-owusu-ansah-09274a223/)
 
-##  Contributing
+## Contributing
+
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
