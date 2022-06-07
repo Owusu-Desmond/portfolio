@@ -132,7 +132,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #4b5296;
   margin-top: 20px;
 }
 
@@ -204,7 +204,7 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
-  color: #7a869a;
+  color: #515966;
 }
 
 .card-text {
@@ -315,14 +315,14 @@ a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396df2;
+  color: #274aa4;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 
 .aboutMyself-content > div > button:hover {
   background-color: #6070ff;
-  color: #fff;
+  color: #141414;
   font-size: 20px;
 }
 
@@ -476,7 +476,7 @@ summary:hover .summary-chevron-up svg {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #274aa4;
   height: 48px;
   margin-top: 22px;
   border-radius: 8px;
