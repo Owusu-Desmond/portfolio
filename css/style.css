@@ -49,11 +49,13 @@ a {
   animation-iteration-count: 1;
   animation-delay: 0.5s;
 }
-.logo > img{
+
+.logo > img {
   height: 50px;
   width: 50px;
-  border-radius:50% ;
+  border-radius: 50%;
 }
+
 @keyframes logo-animation {
   from {
     padding-left: 0;
@@ -84,15 +86,17 @@ a {
   height: 100vh;
   transition: 2s;
 }
+
 .mobile-menu-items {
   margin-top: 70px;
 }
+
 .mobile-menu-items li a {
   color: #fff;
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
-  padding: 0px 50px;
+  padding: 0 50px;
 }
 
 .mobile-menu.visible {
@@ -107,10 +111,10 @@ a {
   cursor: pointer;
 }
 
-
-.nav-items{
+.nav-items {
   display: none;
 }
+
 .description {
   width: 319px;
   height: 150px;
@@ -533,6 +537,7 @@ summary:hover .summary-chevron-up svg {
     font-size: large;
     padding: 0 20px 0;
   }
+
   .nav-item a {
     font-weight: 400;
     border-radius: 5px;
@@ -543,7 +548,6 @@ summary:hover .summary-chevron-up svg {
     outline: 1px solid #6070ff;
     padding: 10px;
   }
-
 
   .card {
     grid-template-columns: 1fr 1fr;
