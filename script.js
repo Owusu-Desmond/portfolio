@@ -1,5 +1,6 @@
 let menu = document.querySelector(".Menu");
+const navItems = document.querySelector('.navItems')
 // When the menu is click
 menu.addEventListener('click', (event) => {
-    // write what should happen here
+    navItems.classList.toggle('nav-displayed')
 });
