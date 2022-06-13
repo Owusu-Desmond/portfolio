@@ -1,6 +1,11 @@
-let menu = document.querySelector(".Menu");
-const navItems = document.querySelector('.navItems')
+const mobileMenu = document.querySelector(".Menu");
+const navItems = document.querySelector('.navItems');
+const closeBtn = document.querySelector('.close-btn')
 // When the menu is click
-menu.addEventListener('click', (event) => {
-    navItems.classList.toggle('nav-displayed')
+mobileMenu.addEventListener('click', (event) => {
+    navItems.classList.toggle('nav-displayed');
+});
+// close nav links when the close button is click
+closeBtn.addEventListener('click', (event) => {
+    navItems.classList.toggle('nav-displayed');
 });
