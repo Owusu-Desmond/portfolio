@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="./images/logo.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Desmond Owusu Portfolio">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <title>Desmond Portfolio</title>
+    <title>Desmond Owusu Ansah</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -14,16 +15,23 @@
     <!-- the header section -->
     <header class="Header">
       <div class="headerContent">
-        <a class="Logo" href="#">Desmond Owusu</a>
-        <nav>
-          <ul class="navItems">
-            <li class="close-btn">
-              <img src="./images/menu-close.svg" alt="menu close button">
-            </li>
-            <li class="navItem"><a href="#work-section">Portfolio</a></li>
-            <li class="navItem"><a href="#about-section">About</a></li>
-            <li class="navItem"><a href="#contact-section">Contact</a></li>
+        <a class="logo" href="#"><img src="./images/logo.png" alt="Logo"></a>
+        <!-- nav list for mobile version -->
+        <div class="mobile-menu">
+          <img class="close-btn" src="./images/menu-close.svg" alt="menu close button">
+          <ul class="mobile-menu-items">
+            <li class="mobile-menu-item"><a class="link" href="#work-section">Portfolio</a></li>
+            <li class="mobile-menu-item"><a class="link" href="#about-section">About</a></li>
+            <li class="mobile-menu-item"><a class="link" href="#contact-section">Contact</a></li>
           </ul>
+        </div>
+        <!-- nav list for desktop version -->
+        <nav>
+            <ul class="nav-items">
+              <li class="nav-item"><a href="#work-section">Portfolio</a></li>
+              <li class="nav-item"><a href="#about-section">About</a></li>
+              <li class="nav-item"><a href="#contact-section">Contact</a></li>
+            </ul>
         </nav>
         <img src="images/menu.png" alt="menu" class="Menu" />
       </div>
