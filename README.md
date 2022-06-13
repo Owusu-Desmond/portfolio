@@ -1,12 +1,10 @@
-# Portfolio App
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Portfolio
 
 ## Description
 
-This Portfolio App, include the following process
-
-- Added the page layout in the index.html file
-- Added styling by designing as much as possible (e.g. font, colors, images, tests, margins) using the [template 1 in Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1) .
-- Ensured there was no linter error.
+> Project to build my personal which is compilation of materials that exemplifies my beliefs, skills, qualifications, education, training and experiences.
 
 ## Getting Started
 
@@ -22,28 +20,33 @@ Alternatively, you can just download the complete zip file and extract the folde
 Step 2:
 Copy All Project files and run using VSCODE. HTML can be viewed in browser.
 
-## Deployment
+## Live Demo Link
 
 Access the the online version of my application with this link
 [Live Demo](https://owusu-desmond.github.io/portfolio/)
 
 ## Build With
 
--Editor : Visual studio code
+- Editor : Visual studio code
 
-- Languages : (`HTML` and `CSS`)
+- Languages 
+  - [ ] HTML
+  - [ ] CSS
+  - [ ] JavaScript
 
 ## Author
 
-Desmond Owusu Ansah
+👤 **Desmond Owusu Ansah**
 
 - Github [@Owusu-Desmond](https://github.com/Owusu-Desmond)
 - Twitter [@DesmondOwusuDev](https://twitter.com/DesmondOwusuDev)
 - LinkedIn [@desmond-owusu-ansah](https://www.linkedin.com/in/desmond-owusu-ansah-09274a223/)
 
-## Contributing
+
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
 Feel free to check the [issues page](../../issues/).
 
 ## Show your support
@@ -55,3 +58,7 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
