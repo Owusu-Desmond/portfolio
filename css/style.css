@@ -8,6 +8,7 @@
 body {
   background-color: #e5e5e5;
   font-family: 'poppins', sans-serif;
+  position: relative;
 }
 
 /* The header section  */
@@ -69,12 +70,31 @@ a {
   width: 35px;
 }
 
-.navItem {
+.navItems{
+  display: none;
+}
+
+.nav-displayed {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #6070ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-displayed li{
+  color: #fff;
+}
+
+/* .navItem {
   list-style: none;
   display: none;
   font-size: large;
   padding: 5px;
-}
+} */
 
 .navItem a {
   font-weight: 400;
@@ -513,6 +533,10 @@ summary:hover .summary-chevron-up svg {
 
   .Menu {
     display: none;
+  }
+
+  .navItems{
+    display: block;
   }
 
   .navItem {
