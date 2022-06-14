@@ -528,6 +528,11 @@ summary:hover .summary-chevron-up svg {
     display: none;
   }
 
+  /* hide mobile menu pop up */
+  .mobile-menu.visible {
+    display: none;
+  }
+
   .nav-items {
     display: block;
   }
