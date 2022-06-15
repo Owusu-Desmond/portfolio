@@ -3,7 +3,7 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const closeBtn = document.querySelector('.close-btn');
 // array of object for each project
 const projects = [
-  (Tonic = {
+  {
     imageSrc: './images/nature-snapshot.png',
     title: 'Tonic',
     client: 'CANOPY',
@@ -39,8 +39,8 @@ const projects = [
                 printer took a galley of type and scrambled it 1960s with the
                 relea
                 `,
-  }),
-  (multiProjectStories = {
+  },
+  {
     imageSrc: './images/professional-art-snapshot.jpg',
     title: 'Multi-Project Stories',
     client: 'FACEBOOK',
@@ -75,10 +75,10 @@ const projects = [
                 and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown
                 printer took a galley of type and scrambled it 1960s with the
-                relea
+                    relea
                 `,
-  }),
-  (facebook360 = {
+  },
+  {
     imageSrc: './images/skills-snapshot.png',
     title: 'FaceBook 360',
     client: 'FACEBOOK',
@@ -114,8 +114,8 @@ const projects = [
                 printer took a galley of type and scrambled it 1960s with the
                 relea
                 `,
-  }),
-  (uberNavigation = {
+  },
+  {
     imageSrc: './images/avialability-snapshot.png',
     title: 'Uber Navigation',
     client: 'Uber',
@@ -129,9 +129,9 @@ const projects = [
     tagsLanguages: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
     privateClasses: {
       reverseCardContent: 'card-reverse',
-      seeProjectBtn: 'tonic-see-projec-btn',
-      modalContainer: 'tonic-modal-container',
-      modalCloseBtn: 'tonic-modal-close-btn',
+      seeProjectBtn: 'uber-see-projec-btn',
+      modalContainer: 'uber-modal-container',
+      modalCloseBtn: 'uber-modal-close-btn',
     },
     details: `
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -151,19 +151,22 @@ const projects = [
                 printer took a galley of type and scrambled it 1960s with the
                 relea
                 `,
-  }),
+  },
 ];
-/* 
+/*
     - loop through the array of object storing project data
     - show these projects on UI when page onload
 */
 document.addEventListener('DOMContentLoaded', () => {
   const projectsContainer = document.querySelector('.work-section-container');
-  let projectCardContent, modalContent, projectLangs;
+  let projectCardContent;
+  let modalContent;
+  let projectLangs;
+  let projectCardContainer;
+  let modalContainer;
   projects.forEach((project) => {
-    projectLangs = project.tagsLanguages.map((lang) => {
-      return `<li class="card-skills-btn"><a href="#">${lang}</a></li>`;
-    });
+    // loop through projects languages and display them
+    projectLangs = project.tagsLanguages.map((lang) => `<li class="card-skills-btn"><a href="#">${lang}</a></li>`);
     projectCardContent = `
                       <div>
                           <img class="card-image" src= ${project.imageSrc} alt="skills snapshot"/>
@@ -181,18 +184,20 @@ document.addEventListener('DOMContentLoaded', () => {
                           <ul class="card-skills-btns-container">
                               ${projectLangs.join('')}
                           </ul>
-                          <button type="button" class="see-project-btn ${
-                            project.privateClasses.seeProjectBtn
-                          }">See project</button>
+                          <button type="button" 
+                            class="see-project-btn ${project.privateClasses.seeProjectBtn}
+                          ">
+                            See project
+                          </button>
                       </div>
                   `;
     modalContent = `
                   <div class="modal-content">
                       <div class="modal-header">
                       <div class="modal-close-btn-container">
-                          <button class="modal-close-btn ${
-                            project.privateClasses.modalCloseBtn
-                          }">x</button>
+                        <button 
+                            class="modal-close-btn ${project.privateClasses.modalCloseBtn}">x
+                        </button>
                       </div>
                       <h2 class="card-title">${project.title}</h2>
                       <div class="skills">
@@ -222,13 +227,17 @@ document.addEventListener('DOMContentLoaded', () => {
                       </div>
                   </div>
               `;
-    // create an element with class for card
+    /* 
+        create an element with class for card
+    */
     projectCardContainer = document.createElement('div');
     projectCardContainer.innerHTML = projectCardContent;
     // set element class card
     projectCardContainer.setAttribute('class', 'card');
     projectsContainer.appendChild(projectCardContainer);
-    // create an element with class for modal
+    /*
+        create an element with class for modal
+    */
     modalContainer = document.createElement('div');
     modalContainer.innerHTML = modalContent;
     // set element class and id attributes for modal
@@ -236,6 +245,19 @@ document.addEventListener('DOMContentLoaded', () => {
     modalContainer.setAttribute('id', `${project.privateClasses.modalContainer}`);
     // append modal
     projectsContainer.appendChild(modalContainer);
+  });
+});
+// show and hide modal
+document.addEventListener('click', (event) => {
+  let modalContainer;
+  projects.forEach((project) => {
+    modalContainer = document.getElementById(project.privateClasses.modalContainer);
+    if (event.target.classList.contains(project.privateClasses.seeProjectBtn)) {
+      modalContainer.style.display = 'block';
+    }
+    if (event.target.classList.contains(project.privateClasses.modalCloseBtn)) {
+      modalContainer.style.display = 'none';
+    }
   });
 });
 // When the menu is click
