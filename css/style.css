@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +7,7 @@
 
 body {
   background-color: #e5e5e5;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   position: relative;
 }
 
@@ -21,7 +22,7 @@ a {
 
 .background {
   position: absolute;
-  background-image: url('../images/background.svg');
+  background-image: url("../images/background.svg");
   background-color: #ffff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,7 +117,7 @@ a {
 }
 
 .description {
-  width: 319px;
+  max-width: 400px;
   height: 150px;
   color: #172b4d;
   font-style: normal;
@@ -239,7 +240,8 @@ a {
 .card-skills-btns-container {
   list-style: none;
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  column-gap: 10px;
   align-items: center;
 }
 
@@ -287,10 +289,12 @@ a {
   padding-top: 100px;
   left: 0;
   top: 0;
+  font-family: "Poppins";
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.5);
+  background-color: rgba(193, 199, 208, 0.6);
 }
 
 /* Modal Content */
@@ -300,9 +304,47 @@ a {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  border-radius: 10px;
   margin-bottom: 100px;
 }
-
+/* modal header */
+.modal-close-btn-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.modal-close-btn {
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(116, 119, 122);
+}
+.modal-image {
+  margin: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+.project-details-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+.modal-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.modal-button {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #396df2;
+  padding: 8px 25px;
+}
 /* css for about myself section */
 .aboutMyself-container {
   position: relative;
@@ -441,7 +483,7 @@ summary:hover .summary-chevron-up svg {
   position: relative;
   top: 50px;
   width: 100%;
-  background-image: url('../images/background.svg');
+  background-image: url("../images/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #6070ff;
@@ -545,7 +587,7 @@ summary:hover .summary-chevron-up svg {
 
 @media screen and (min-width: 768px) {
   .background {
-    background-image: url('../images/Header-bg-desktop.svg');
+    background-image: url("../images/Header-bg-desktop.svg");
   }
 
   .Menu {
@@ -632,7 +674,13 @@ summary:hover .summary-chevron-up svg {
   .laug-text {
     display: block;
   }
-
+  /* the modal */
+  .modal-content {
+    width: 75%;
+  }
+  .project-details-container {
+    grid-template-columns: 2fr 1fr;
+  }
   /* @media query for about section */
   .aboutMyself-content {
     grid-template-columns: 1fr 1fr;
@@ -645,7 +693,7 @@ summary:hover .summary-chevron-up svg {
   }
 
   .contact-section {
-    background-image: url('../images/Header-bg-desktop.svg');
+    background-image: url("../images/Header-bg-desktop.svg");
     background-size: cover;
     padding-bottom: 50px;
   }
