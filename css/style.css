@@ -542,6 +542,11 @@ summary:hover .summary-chevron-up svg {
   margin-top: 18px;
 }
 
+.error-message {
+  color: rgb(185, 14, 14);
+  display: none;
+}
+
 .form-group > input,
 .form-group > textarea {
   background: #fff;
