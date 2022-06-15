@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </div>
                   </div>
               `;
-    /* 
+    /*
         create an element with class for card
     */
     projectCardContainer = document.createElement('div');
