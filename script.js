@@ -153,6 +153,47 @@ const projects = [
                 `,
   }),
 ];
+/* 
+    - loop through the array of object storing project data
+    - show these projects on UI when page onload
+*/
+document.addEventListener('DOMContentLoaded', () => {
+    const projectsContainer = document.querySelector('.work-section-container');
+    let projectCardContent , modalContent , projectLangs;
+      projects.forEach(project => {
+          projectLangs = project.tagsLanguages.map(lang => {
+              return `<li class="card-skills-btn"><a href="#">${lang}</a></li>`
+          });
+          projectCardContent = 
+                  `
+                      <div>
+                          <img class="card-image" src= ${project.imageSrc} alt="skills snapshot"/>
+                      </div>
+                          <div class='card-content ${project.privateClasses.reverseCardContent}'>
+                          <h2 class="card-title">${project.title}</h2>
+                          <div class="skills">
+                              <span>${project.client}</span>
+                              <span class="dot"></span>
+                              <span>${project.role}</span>
+                              <span class="dot"></span>
+                              <span>${project.year}</span>
+                          </div>
+                          <p class="card-text">${project.description}</p>
+                          <ul class="card-skills-btns-container">
+                              ${projectLangs.join('')}
+                          </ul>
+                          <button type="button" class="see-project-btn ${project.privateClasses.seeProjectBtn}">See project</button>
+                      </div>
+                  `; 
+              // create an element with class for card
+              projectCardContainer = document.createElement('div');
+              projectCardContainer.innerHTML = projectCardContent;
+              // set element class card
+              projectCardContainer.setAttribute('class', 'card');
+              projectsContainer.appendChild(projectCardContainer);
+            });
+        },
+);
 // When the menu is click
 hamburger.addEventListener('click', () => {
   mobileMenu.classList.add('visible');
