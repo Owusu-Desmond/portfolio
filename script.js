@@ -158,14 +158,13 @@ const projects = [
     - show these projects on UI when page onload
 */
 document.addEventListener('DOMContentLoaded', () => {
-    const projectsContainer = document.querySelector('.work-section-container');
-    let projectCardContent , modalContent , projectLangs;
-      projects.forEach(project => {
-          projectLangs = project.tagsLanguages.map(lang => {
-              return `<li class="card-skills-btn"><a href="#">${lang}</a></li>`
-          });
-          projectCardContent = 
-                  `
+  const projectsContainer = document.querySelector('.work-section-container');
+  let projectCardContent, modalContent, projectLangs;
+  projects.forEach((project) => {
+    projectLangs = project.tagsLanguages.map((lang) => {
+      return `<li class="card-skills-btn"><a href="#">${lang}</a></li>`;
+    });
+    projectCardContent = `
                       <div>
                           <img class="card-image" src= ${project.imageSrc} alt="skills snapshot"/>
                       </div>
@@ -182,18 +181,63 @@ document.addEventListener('DOMContentLoaded', () => {
                           <ul class="card-skills-btns-container">
                               ${projectLangs.join('')}
                           </ul>
-                          <button type="button" class="see-project-btn ${project.privateClasses.seeProjectBtn}">See project</button>
+                          <button type="button" class="see-project-btn ${
+                            project.privateClasses.seeProjectBtn
+                          }">See project</button>
                       </div>
-                  `; 
-              // create an element with class for card
-              projectCardContainer = document.createElement('div');
-              projectCardContainer.innerHTML = projectCardContent;
-              // set element class card
-              projectCardContainer.setAttribute('class', 'card');
-              projectsContainer.appendChild(projectCardContainer);
-            });
-        },
-);
+                  `;
+    modalContent = `
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <div class="modal-close-btn-container">
+                          <button class="modal-close-btn ${
+                            project.privateClasses.modalCloseBtn
+                          }">x</button>
+                      </div>
+                      <h2 class="card-title">${project.title}</h2>
+                      <div class="skills">
+                          <span>${project.client}</span>
+                          <span class="dot"></span>
+                          <span>${project.role}</span>
+                          <span class="dot"></span>
+                          <span>${project.year}</span>
+                      </div>
+                      </div>
+                      <div>
+                          <img class="card-image" src= ${project.imageSrc} alt="skills snapshot"/>
+                      </div>
+                      <div class="project-details-container">
+                      <div class="project-content">
+                          ${project.details}
+                      </div>
+                      <div>
+                          <ul class="card-skills-btns-container">
+                          ${projectLangs.join('')}
+                          </ul>
+                      </div>
+                      <div>
+                          <button class='modal-buttons' type='button'>See live</button>
+                          <button class='modal-buttons' type='button'>Source Code</button>
+                      </div>
+                      </div>
+                  </div>
+              `;
+    // create an element with class for card
+    projectCardContainer = document.createElement('div');
+    projectCardContainer.innerHTML = projectCardContent;
+    // set element class card
+    projectCardContainer.setAttribute('class', 'card');
+    projectsContainer.appendChild(projectCardContainer);
+    // create an element with class for modal
+    modalContainer = document.createElement('div');
+    modalContainer.innerHTML = modalContent;
+    // set element class and id attributes for modal
+    modalContainer.setAttribute('class', `modal ${project.privateClasses.modalContainer}`);
+    modalContainer.setAttribute('id', `${project.privateClasses.modalContainer}`);
+    // append modal
+    projectsContainer.appendChild(modalContainer);
+  });
+});
 // When the menu is click
 hamburger.addEventListener('click', () => {
   mobileMenu.classList.add('visible');
