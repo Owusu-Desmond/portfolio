@@ -194,36 +194,42 @@ document.addEventListener('DOMContentLoaded', () => {
     modalContent = `
                   <div class="modal-content">
                       <div class="modal-header">
-                      <div class="modal-close-btn-container">
-                        <button 
-                            class="modal-close-btn ${project.privateClasses.modalCloseBtn}">x
-                        </button>
-                      </div>
-                      <h2 class="card-title">${project.title}</h2>
-                      <div class="skills">
-                          <span>${project.client}</span>
-                          <span class="dot"></span>
-                          <span>${project.role}</span>
-                          <span class="dot"></span>
-                          <span>${project.year}</span>
-                      </div>
+                        <div class="modal-close-btn-container">
+                          <button 
+                              class="modal-close-btn ${project.privateClasses.modalCloseBtn}">x
+                          </button>
+                        </div>
+                        <h2 class="card-title">${project.title}</h2>
+                        <div class="skills">
+                            <span>${project.client}</span>
+                            <span class="dot"></span>
+                            <span>${project.role}</span>
+                            <span class="dot"></span>
+                            <span>${project.year}</span>
+                        </div>
                       </div>
                       <div>
-                          <img class="card-image" src= ${project.imageSrc} alt="skills snapshot"/>
+                          <img class="modal-image" src= ${project.imageSrc} alt="skills snapshot"/>
                       </div>
                       <div class="project-details-container">
-                      <div class="project-content">
-                          ${project.details}
-                      </div>
-                      <div>
-                          <ul class="card-skills-btns-container">
-                          ${projectLangs.join('')}
-                          </ul>
-                      </div>
-                      <div>
-                          <button class='modal-buttons' type='button'>See live</button>
-                          <button class='modal-buttons' type='button'>Source Code</button>
-                      </div>
+                        <div class="project-content">
+                            ${project.details}
+                        </div>
+                        <div>
+                          <div>
+                              <ul class="card-skills-btns-container">
+                              ${projectLangs.join('')}
+                              </ul>
+                          </div>
+                          <div class="modal-buttons-container">
+                              <button class='modal-button' type='button'>See live 
+                                <img src="./images/see-live-icon.jpg" alt="see live icon"/>
+                              </button>
+                              <button class='modal-button' type='button'>Source Code
+                              <img src="./images/see-source-code.jpg" alt="see source code icon"/>
+                              </button>
+                          </div>
+                        </div>
                       </div>
                   </div>
               `;
