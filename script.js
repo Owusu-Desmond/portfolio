@@ -286,3 +286,17 @@ mobileMenu.addEventListener('click', (event) => {
     document.body.style.overflow = 'scroll';
   }
 });
+// form Validation
+document.querySelector('.form-submit-btn').addEventListener('click', (event) => {
+  const email = document.getElementById('email').value;
+  const error = document.querySelector('.email-error-message');
+  const isLowerCase = (str) => str === str.toLowerCase();
+  if (!isLowerCase(email)) {
+    event.preventDefault();
+    error.style.display = 'block';
+    // hide error 5 seconds time so it can show up if the there is another error when click again
+    setTimeout(() => {
+      error.style.display = 'none';
+    }, 5000);
+  }
+});
