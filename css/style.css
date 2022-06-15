@@ -6,7 +6,7 @@
 
 body {
   background-color: #e5e5e5;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   position: relative;
 }
 
@@ -21,7 +21,7 @@ a {
 
 .background {
   position: absolute;
-  background-image: url("../images/background.svg");
+  background-image: url('../images/background.svg');
   background-color: #ffff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -258,7 +258,7 @@ a {
   transition: 1s;
 }
 
-.see-projects-btn {
+.see-project-btn {
   margin-top: 15px;
   left: 24px;
   top: 114px;
@@ -275,8 +275,32 @@ a {
   box-shadow: 3px 5px 4px #e5e5e5;
 }
 
-.see-projects-btn:hover {
+.see-project-btn:hover {
   background-color: #ebebff;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  margin-bottom: 100px;
 }
 
 /* css for about myself section */
@@ -417,7 +441,7 @@ summary:hover .summary-chevron-up svg {
   position: relative;
   top: 50px;
   width: 100%;
-  background-image: url("../images/background.svg");
+  background-image: url('../images/background.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #6070ff;
@@ -521,7 +545,7 @@ summary:hover .summary-chevron-up svg {
 
 @media screen and (min-width: 768px) {
   .background {
-    background-image: url("../images/Header-bg-desktop.svg");
+    background-image: url('../images/Header-bg-desktop.svg');
   }
 
   .Menu {
@@ -560,17 +584,16 @@ summary:hover .summary-chevron-up svg {
     padding: 24px;
   }
 
-  .card2 > .card-content,
-  .card4 > .card-content {
+  .card-reverse {
     grid-column-start: 1;
     grid-row-start: 1;
   }
 
-  .see-projects-btn:active {
+  .see-project-btn:active {
     transform: translateY(6px);
   }
 
-  .see-projects-btn:hover {
+  .see-project-btn:hover {
     background-color: #6070ff;
     color: white;
   }
@@ -622,7 +645,7 @@ summary:hover .summary-chevron-up svg {
   }
 
   .contact-section {
-    background-image: url("../images/Header-bg-desktop.svg");
+    background-image: url('../images/Header-bg-desktop.svg');
     background-size: cover;
     padding-bottom: 50px;
   }
