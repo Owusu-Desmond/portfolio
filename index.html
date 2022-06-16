@@ -15,7 +15,9 @@
     <!-- the header section -->
     <header class="Header">
       <div class="headerContent">
-        <a class="logo" href="#"><img src="./images/logo.png" alt="Logo"></a>
+        <a class="logo" href="#"><img src="./images/logo.png" alt="Logo">
+          <span style="position: absolute; padding-top: 5px;">Desmond</span>
+        </a>
         <!-- nav list for mobile version -->
         <div class="mobile-menu">
           <img class="close-btn" src="./images/menu-close.svg" alt="menu close button">
@@ -275,11 +277,13 @@
           </p>
         </div>
         <div class="contact-form-container">
-          <form action="https://formspree.io/f/xjvlljqr" method="post">
+          <form id="contact-form" action="https://formspree.io/f/xjvlljqr" method="post">
             <div class="form-group">
               <input
                 type="text"
                 maxlength="30"
+                id="username"
+                name="username"
                 placeholder="Desmond Owusu"
                 required
               />
@@ -288,6 +292,7 @@
               <input
                 id="email"
                 type="email"
+                name="email"
                 placeholder="desmond0406114009@gmail.com"
                 required
               />
