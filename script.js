@@ -300,3 +300,16 @@ document.querySelector('.form-submit-btn').addEventListener('click', (event) => 
     }, 5000);
   }
 });
+// store form data in the localStorage of the browser
+const form = document.getElementById('contact-form');
+const [username, email, message] = form.elements;
+
+username.addEventListener('change', event => {
+  alert("value changed")
+  let data = {
+    username: username.value,
+    email: email.value,
+    message: message.value,
+  }  
+  localStorage.setItem('form-data', JSON.stringify(data));
+})
