@@ -166,7 +166,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let modalContainer;
   projects.forEach((project) => {
     // loop through projects languages and display them
-    projectLangs = project.tagsLanguages.map((lang) => `<li class="card-skills-btn"><a href="#">${lang}</a></li>`);
+    projectLangs = project.tagsLanguages.map(
+      (lang) => `<li class="card-skills-btn"><a href="#">${lang}</a></li>`
+    );
     projectCardContent = `
                       <div>
                           <img class="card-image" src= ${project.imageSrc} alt="skills snapshot"/>
@@ -304,12 +306,19 @@ document.querySelector('.form-submit-btn').addEventListener('click', (event) => 
 const form = document.getElementById('contact-form');
 const [username, email, message] = form.elements;
 
-username.addEventListener('change', event => {
-  alert("value changed")
-  let data = {
-    username: username.value,
-    email: email.value,
-    message: message.value,
-  }  
+if (!localStorage.getItem('form-data')) {
+  let data = { usernameValue: '', emailValue: '', messageValue: '' };
   localStorage.setItem('form-data', JSON.stringify(data));
-})
+}
+
+const setDataInBrowser = (element, elementValue) => {
+  element.addEventListener('change', (event) => {
+    let retrivedData = JSON.parse(localStorage.getItem('form-data'));
+    retrivedData[elementValue] = element.value;
+    localStorage.setItem('form-data', JSON.stringify(retrivedData));
+  });
+};
+
+setDataInBrowser(username, 'usernameValue');
+setDataInBrowser(email, 'emailValue');
+setDataInBrowser(message, 'messageValue');
