@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div>
                           <div>
                               <ul class="card-skills-btns-container">
-                              ${projectLangs.join('')}
+                              ${projectLangs}
                               </ul>
                           </div>
                           <div class="modal-buttons-container">
@@ -293,7 +293,7 @@ document.querySelector('.form-submit-btn').addEventListener('click', (event) => 
   const email = document.getElementById('email').value;
   const error = document.querySelector('.email-error-message');
   const isLowerCase = (str) => str === str.toLowerCase();
-  if (!isLowerCase(email)) {
+  if (isLowerCase(email)) {
     event.preventDefault();
     error.style.display = 'block';
     // hide error 5 seconds time so it can show up if the there is another error when click again
