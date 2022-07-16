@@ -31,8 +31,8 @@ const projects = [
               and the way people interact over the internet. 
               Global Events is the best website for sharing and streaming live event in 2022.  
     `,
-    liveLink: "https://owusu-desmond.github.io/global-events/",
-    sourceLink : "https://github.com/Owusu-Desmond/global-events",
+    liveLink: 'https://owusu-desmond.github.io/global-events/',
+    sourceLink: 'https://github.com/Owusu-Desmond/global-events',
   },
   {
     imageSrc: './images/projects-screenshot/awesome-books-list-page.jpg',
@@ -62,8 +62,8 @@ const projects = [
             <b>Add Book</b> : This section is where you can add books.<hr>
             <b>Contact Information</b> : Users can find contact information if they have any questions.<hr>
           `,
-    liveLink: "https://owusu-desmond.github.io/awesome-books/",
-    sourceLink : "https://github.com/Owusu-Desmond/awesome-books/",
+    liveLink: 'https://owusu-desmond.github.io/awesome-books/',
+    sourceLink: 'https://github.com/Owusu-Desmond/awesome-books/',
   },
   {
     imageSrc: './images/skills-snapshot.png',
