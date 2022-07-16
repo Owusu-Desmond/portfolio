@@ -118,8 +118,7 @@ a {
 }
 
 .description {
-  max-width: 400px;
-  height: 150px;
+  max-width: 700px;
   color: #172b4d;
   font-style: normal;
   font-weight: 700;
@@ -129,6 +128,7 @@ a {
 
 /* the main section  */
 .aboutMe {
+  margin-top: 20px;
   color: #344563;
   font-style: normal;
   font-weight: 400;
@@ -232,7 +232,7 @@ a {
 
 .card-text {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   color: #344563;
@@ -329,9 +329,11 @@ a {
 }
 
 .project-details-container {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+  font-size: 20px;
 }
 
 .modal-buttons-container {

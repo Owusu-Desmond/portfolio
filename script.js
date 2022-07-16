@@ -4,17 +4,18 @@ const closeBtn = document.querySelector('.close-btn');
 // array of object for each project
 const projects = [
   {
-    imageSrc: './images/nature-snapshot.png',
-    title: 'Tonic',
-    client: 'CANOPY',
+    imageSrc: './images/projects-screenshot/global-events-hompage-plus-login.jpg',
+    title: 'Global Events',
+    client: 'Global',
     counter: '',
     role: 'Back End Dev',
-    year: '2019',
+    year: '2022',
     description: `
-                      A daily selection of privately personalized reads;
-                      no accounts or sign- ups required.
+                Global Events is live-streaming website that allow users to see upcoming events,
+                record and broadcast video simultaneously;
+                accounts or sign- ups required for streamers.
                   `,
-    tagsLanguages: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
+    tagsLanguages: ['HTML', 'CSS', 'JavaScript'],
     privateClasses: {
       reverseCardContent: '',
       seeProjectBtn: 'tonic-see-project-btn',
@@ -22,37 +23,30 @@ const projects = [
       modalCloseBtn: 'tonic-modal-close-btn',
     },
     details: `
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it 1960s with the releaLorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it 1960s with the releorem Ipsum is simply dummy
-                text of the printing and typesetting industry. Lorem Ipsum han
-                printer took a galley of type and scrambled it 1960s with the
-                releawn printer took a galley of type and scrambled it 1960s
-                with the releaLorem Ipsum is simply dummy text of the printing
-                and typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it 1960s with the
-                relea
-                `,
+              Global Events is live-streaming website that allow users 
+              to record and broadcast video simultaneously.
+              Also allows users to broadcast live recordings of videos and 
+              sound to others who have access to the stream Global Events Live video 
+              streaming have fueled influencer marketing, entertainment, business marketing,
+              and the way people interact over the internet. 
+              Global Events is the best website for sharing and streaming live event in 2022.  
+    `,
+    liveLink: 'https://owusu-desmond.github.io/global-events/',
+    sourceLink: 'https://github.com/Owusu-Desmond/global-events',
   },
   {
-    imageSrc: './images/professional-art-snapshot.jpg',
-    title: 'Multi-Project Stories',
-    client: 'FACEBOOK',
+    imageSrc: './images/projects-screenshot/awesome-books-list-page.jpg',
+    title: 'Awesome Books',
+    client: 'Users',
     counter: '',
-    role: 'Full Stack Dev',
-    year: '2020',
+    role: 'Front End Dev',
+    year: '2022',
     description: `
-                      Experimental content creation feature that allows users 
-                      to add to an existing story over the course of a day without 
-                      spamming their friends.
+                  Awesome Books is a website that allow users to create a 
+                  book with title and author name and add 
+                  to their books list on the page.
                   `,
-    tagsLanguages: ['HTML', 'Ruby on Rails', 'SCSS', 'JavaScript'],
+    tagsLanguages: ['HTML', 'CSS', 'JavaScript'],
     privateClasses: {
       reverseCardContent: 'card-reverse',
       seeProjectBtn: 'multi-see-project-btn',
@@ -60,23 +54,16 @@ const projects = [
       modalCloseBtn: 'multi-modal-close-btn',
     },
     details: `
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it 1960s with the releaLorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it 1960s with the releorem Ipsum is simply dummy
-                text of the printing and typesetting industry. Lorem Ipsum han
-                printer took a galley of type and scrambled it 1960s with the
-                releawn printer took a galley of type and scrambled it 1960s
-                with the releaLorem Ipsum is simply dummy text of the printing
-                and typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it 1960s with the
-                    relea
-                `,
+            Awesome Books is a website that allow users to create
+            a book with title and author name and add to 
+            their books list on the page. A user can add book and remove book.
+            This website have the following sections <hr>
+            <b>All Awesome Books(Home page)</b> : This section is where you can find the your added books.<hr>
+            <b>Add Book</b> : This section is where you can add books.<hr>
+            <b>Contact Information</b> : Users can find contact information if they have any questions.<hr>
+          `,
+    liveLink: 'https://owusu-desmond.github.io/awesome-books/',
+    sourceLink: 'https://github.com/Owusu-Desmond/awesome-books/',
   },
   {
     imageSrc: './images/skills-snapshot.png',
@@ -224,12 +211,13 @@ document.addEventListener('DOMContentLoaded', () => {
                               </ul>
                           </div>
                           <div class="modal-buttons-container">
-                              <button class='modal-button' type='button'>See live 
-                                <img src="./images/see-live-icon.jpg" alt="see live icon"/>
-                              </button>
-                              <button class='modal-button' type='button'>Source Code
+                              <a href="${project.liveLink}" class='modal-button' type='button'>
+                              See live 
+                                <img src="./images/see-live-icon.jpg" alt="see live icon"/> 
+                              </a>
+                              <a href="${project.sourceLink}" class='modal-button' type='button'>Source Code
                               <img src="./images/see-source-code.jpg" alt="see source code icon"/>
-                              </button>
+                              </a>
                           </div>
                         </div>
                       </div>
