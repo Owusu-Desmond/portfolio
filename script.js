@@ -5,9 +5,9 @@ const closeBtn = document.querySelector('.close-btn');
 const projects = [
   {
     imageSrc: './images/projects-screenshot/global-events-hompage-plus-login.jpg',
+    screenShotVideo: './videos/global-events.mp4',
     title: 'Global Events',
     client: 'Global',
-    counter: '',
     role: 'Back End Dev',
     year: '2022',
     description: `
@@ -18,9 +18,9 @@ const projects = [
     tagsLanguages: ['HTML', 'CSS', 'JavaScript'],
     privateClasses: {
       reverseCardContent: '',
-      seeProjectBtn: 'tonic-see-project-btn',
-      modalContainer: 'tonic-modal-container',
-      modalCloseBtn: 'tonic-modal-close-btn',
+      seeProjectBtn: 'global-events-see-project-btn',
+      modalContainer: 'global-events-tonic-modal-container',
+      modalCloseBtn: 'global-events-tonic-modal-close-btn',
     },
     details: `
               Global Events is live-streaming website that allow users 
@@ -36,9 +36,9 @@ const projects = [
   },
   {
     imageSrc: './images/projects-screenshot/awesome-books-list-page.jpg',
+    screenShotVideo: './videos/awesome-books.mp4',
     title: 'Awesome Books',
     client: 'Users',
-    counter: '',
     role: 'Front End Dev',
     year: '2022',
     description: `
@@ -66,78 +66,84 @@ const projects = [
     sourceLink: 'https://github.com/Owusu-Desmond/awesome-books/',
   },
   {
-    imageSrc: './images/skills-snapshot.png',
-    title: 'FaceBook 360',
-    client: 'FACEBOOK',
-    counter: '',
+    imageSrc: './images/projects-screenshot/patupa.jpg',
+    screenShotVideo: './videos/patupa.mp4',
+    title: 'Patupa',
+    client: 'Users',
     role: 'Full Stack Dev',
-    year: '2021',
+    year: '2022',
     description: `
-                      Exploring the future of media in Facebook's first Virtual 
-                      Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                  Patupa is a simple and fast online shopping application that helps users can 
+                  purchase with no cost of delivery and short time delivery.
                   `,
-    tagsLanguages: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
+    tagsLanguages: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
     privateClasses: {
       reverseCardContent: '',
-      seeProjectBtn: 'fb360-see-projec-btn',
-      modalContainer: 'fb360-modal-container',
-      modalCloseBtn: 'fb360-modal-close-btn',
+      seeProjectBtn: 'patupa-see-projec-btn',
+      modalContainer: 'patupa-modal-container',
+      modalCloseBtn: 'patupa-modal-close-btn',
     },
     details: `
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it 1960s with the releaLorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it 1960s with the releorem Ipsum is simply dummy
-                text of the printing and typesetting industry. Lorem Ipsum han
-                printer took a galley of type and scrambled it 1960s with the
-                releawn printer took a galley of type and scrambled it 1960s
-                with the releaLorem Ipsum is simply dummy text of the printing
-                and typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it 1960s with the
-                relea
+              Patupa is a simple and fast online shopping application that helps users can purchase 
+              with no cost of delivery and short time delivery. Products are available in different 
+              categories and users can also search for any products of their choice. Users can add products 
+              to their cart and checkout anytime. 
+              Products can be rated by users and top-rated products are displayed on the home page.
                 `,
+    liveLink: 'https://patupa.herokuapp.com/',
+    sourceLink: 'http://github.com/Owusu-Desmond/patupa',
   },
   {
-    imageSrc: './images/avialability-snapshot.png',
-    title: 'Uber Navigation',
-    client: 'Uber',
-    counter: '',
+    imageSrc: './images/projects-screenshot/showbizz.jpg',
+    screenShotVideo: './videos/showbizz.mp4',
+    title: 'ShowBizz',
+    client: 'Shows',
     role: 'Lead Developer',
     year: '2022',
     description: `
-                          A smart assistant to make driving more safe, efficient, and fun by
-                          unlocking your most expensive computer: your car.
+                  ShowBizz is a website that shows you all the latest Tv-shows and Movies, you can browse, 
+                  like, and comment on your favorites.
                       `,
-    tagsLanguages: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
+    tagsLanguages: ['HTML', 'CSS', 'JavaScript', 'webpack', 'API'],
     privateClasses: {
       reverseCardContent: 'card-reverse',
-      seeProjectBtn: 'uber-see-projec-btn',
-      modalContainer: 'uber-modal-container',
-      modalCloseBtn: 'uber-modal-close-btn',
+      seeProjectBtn: 'showbizz-see-projec-btn',
+      modalContainer: 'showbizz-modal-container',
+      modalCloseBtn: 'showbizz-modal-close-btn',
     },
     details: `
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it 1960s with the releaLorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it 1960s with the releorem Ipsum is simply dummy
-                text of the printing and typesetting industry. Lorem Ipsum han
-                printer took a galley of type and scrambled it 1960s with the
-                releawn printer took a galley of type and scrambled it 1960s
-                with the releaLorem Ipsum is simply dummy text of the printing
-                and typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it 1960s with the
-                relea
+              ShowBizz is a website that shows you all the latest Tv-shows and Movies, you can browse, 
+              like, and comment on your favorites. Users can get the details about a particular show and movie. 
+              ShowBizz also has a search feature that allows you to search for a particular show or movie.
                 `,
+    liveLink: 'https://pinkmoon25.github.io/ShowBizz/',
+    sourceLink: 'https://github.com/Owusu-Desmond/showbizz',
+  },
+  {
+    imageSrc: './images/projects-screenshot/todos.jpg',
+    screenShotVideo: './videos/react-todo-app.mp4',
+    title: "Today's Todo's",
+    client: "Todo's",
+    role: 'Lead Developer',
+    year: '2022',
+    description: `
+                  This is a To-do List app, where you can add your tasks to do, and It will be saved 
+                  so you will have access to your tasks anytime you come back to the app.
+                      `,
+    tagsLanguages: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'Redux'],
+    privateClasses: {
+      reverseCardContent: 'card-reverse',
+      seeProjectBtn: 'todos-see-projec-btn',
+      modalContainer: 'todos-modal-container',
+      modalCloseBtn: 'todos-modal-close-btn',
+    },
+    details: `
+              This is a To-do List app, where you can add your tasks to do, and It will be saved 
+              so you will have access to your tasks anytime you come back to the app. 
+              You can add Tasks, mark them as complete, delete tasks, or delete all that are completed at once.
+                `,
+    liveLink: 'https://todays-todos.herokuapp.com/',
+    sourceLink: 'https://github.com/Owusu-Desmond/todos',
   },
 ];
 /*
@@ -151,6 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let projectLangs;
   let projectCardContainer;
   let modalContainer;
+  projects.sort(() => 0.5 - Math.random());
   projects.forEach((project) => {
     // loop through projects languages and display them
     projectLangs = project.tagsLanguages.map(
@@ -158,13 +165,12 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     projectCardContent = `
                       <div>
-                          <img class="card-image" src= ${project.imageSrc} alt="skills snapshot"/>
+                          <img src="${project.imageSrc}" alt="${project.title}" class="card-image">
                       </div>
                           <div class='card-content ${project.privateClasses.reverseCardContent}'>
                           <h2 class="card-title">${project.title}</h2>
                           <div class="skills">
                               <span>${project.client}</span>
-                              <span class="dot"></span>
                               <span>${project.role}</span>
                               <span class="dot"></span>
                               <span>${project.year}</span>
@@ -172,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <p class="card-text">${project.description}</p>
                           <ul class="card-skills-btns-container">
                               ${projectLangs.join('')}
+                          <span class="dot"></span>
                           </ul>
                           <button type="button" 
                             class="see-project-btn ${project.privateClasses.seeProjectBtn}
@@ -185,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       <div class="modal-header">
                         <div class="modal-close-btn-container">
                           <button 
-                              class="modal-close-btn ${project.privateClasses.modalCloseBtn}">x
+                              class="modal-close-btn ${project.privateClasses.modalCloseBtn}">&times;
                           </button>
                         </div>
                         <h2 class="card-title">${project.title}</h2>
@@ -198,7 +205,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                       </div>
                       <div>
-                          <img class="modal-image" src= ${project.imageSrc} alt="skills snapshot"/>
+                        <video class="modal-video-container" autoplay loop muted>
+                          <source src="${project.screenShotVideo}" type="video/mp4">
+                        </video>
                       </div>
                       <div class="project-details-container">
                         <div class="project-content">
@@ -213,10 +222,10 @@ document.addEventListener('DOMContentLoaded', () => {
                           <div class="modal-buttons-container">
                               <a href="${project.liveLink}" class='modal-button' type='button'>
                               See live 
-                                <img src="./images/see-live-icon.jpg" alt="see live icon"/> 
+                                <img src="./images/icons/see-live-icon.jpg" alt="see live icon"/> 
                               </a>
                               <a href="${project.sourceLink}" class='modal-button' type='button'>Source Code
-                              <img src="./images/see-source-code.jpg" alt="see source code icon"/>
+                              <img src="./images/icons/see-source-code.jpg" alt="see source code icon"/>
                               </a>
                           </div>
                         </div>
@@ -249,10 +258,14 @@ document.addEventListener('click', (event) => {
   projects.forEach((project) => {
     modalContainer = document.getElementById(project.privateClasses.modalContainer);
     if (event.target.classList.contains(project.privateClasses.seeProjectBtn)) {
-      modalContainer.style.display = 'block';
+      modalContainer.classList.remove('hide-modal');
+      modalContainer.classList.add('show-modal');
+      document.body.style.overflowY = 'hidden';
     }
     if (event.target.classList.contains(project.privateClasses.modalCloseBtn)) {
-      modalContainer.style.display = 'none';
+      modalContainer.classList.remove('show-modal');
+      modalContainer.classList.add('hide-modal');
+      document.body.style.overflowY = 'scroll';
     }
   });
 });
