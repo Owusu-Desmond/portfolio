@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-.dev-icon{
+.dev-icon {
   width: 25px;
   opacity: 0.8;
 }
@@ -54,16 +54,16 @@ a {
 .Menu {
   width: 35px;
 }
- nav {
-    position: relative;
-    top: 0px;
-    padding: 20px;
-    background-color: #fff;
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-  }
+nav {
+  position: relative;
+  top: 0px;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
 .mobile-menu {
   display: none;
   position: absolute;
@@ -505,7 +505,7 @@ summary:hover .summary-chevron-up svg {
   border-radius: 8px;
 }
 
-.lang-text-icon > img{
+.lang-text-icon > img {
   width: 50px;
   height: 50px;
 }
@@ -562,7 +562,6 @@ summary:hover .summary-chevron-up svg {
   display: flex;
   justify-content: center;
   gap: 18px;
-  
 }
 
 .form-group {
@@ -686,7 +685,7 @@ summary:hover .summary-chevron-up svg {
     grid-column-start: 1;
     grid-row-start: 1;
   }
-  
+
   .see-project-btn:hover {
     background-color: #394bf0;
     color: white;
@@ -705,7 +704,6 @@ summary:hover .summary-chevron-up svg {
   @keyframes animate {
     0% {
       transform: scale(0.95);
-      
     }
 
     50% {
@@ -774,11 +772,21 @@ summary:hover .summary-chevron-up svg {
   }
 
   @keyframes tilt-shaking {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(2deg); }
-    50% { transform: rotate(0eg); }
-    75% { transform: rotate(-2deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    50% {
+      transform: rotate(0eg);
+    }
+    75% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
   /* center form submit button */
