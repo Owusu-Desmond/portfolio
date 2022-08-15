@@ -66,7 +66,7 @@ const projects = [
     sourceLink: 'https://github.com/Owusu-Desmond/awesome-books/',
   },
   {
-    imageSrc: './images/patupa.png',
+    imageSrc: './images/projects-screenshot/patupa.jpg',
     screenShotVideo: './videos/patupa.mp4',
     title: 'Patupa',
     client: 'Users',
@@ -94,7 +94,7 @@ const projects = [
     sourceLink: 'http://github.com/Owusu-Desmond/patupa',
   },
   {
-    imageSrc: './images/showbizz.png',
+    imageSrc: './images/projects-screenshot/showbizz.jpg',
     screenShotVideo: './videos/showbizz.mp4',
     title: 'ShowBizz',
     client: 'Shows',
@@ -116,11 +116,11 @@ const projects = [
               like, and comment on your favorites. Users can get the details about a particular show and movie. 
               ShowBizz also has a search feature that allows you to search for a particular show or movie.
                 `,
-    liveLink: 'http://github.com/PinkMoon25/showbizz',
+    liveLink: 'https://pinkmoon25.github.io/ShowBizz/',
     sourceLink: 'https://github.com/Owusu-Desmond/showbizz',
   },
   {
-    imageSrc: './images/showbizz.png',
+    imageSrc: './images/projects-screenshot/todos.jpg',
     screenShotVideo: './videos/react-todo-app.mp4',
     title: "Today's Todo's",
     client: "Todo's",
@@ -165,9 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     projectCardContent = `
                       <div>
-                      <video class="modal-video-container" autoplay loop muted>
-                      <source src="${project.screenShotVideo}" type="video/mp4">
-                    </video>
+                          <img src="${project.imageSrc}" alt="${project.title}" class="card-image">
                       </div>
                           <div class='card-content ${project.privateClasses.reverseCardContent}'>
                           <h2 class="card-title">${project.title}</h2>

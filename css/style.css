@@ -20,6 +20,7 @@ a {
   width: 25px;
   opacity: 0.8;
 }
+
 .logo {
   font-size: 22px;
   color: #6070ff;
@@ -54,9 +55,10 @@ a {
 .Menu {
   width: 35px;
 }
+
 nav {
   position: relative;
-  top: 0px;
+  top: 0;
   padding: 20px;
   background-color: #fff;
   width: 100%;
@@ -64,6 +66,7 @@ nav {
   display: flex;
   align-items: center;
 }
+
 .mobile-menu {
   display: none;
   position: absolute;
@@ -266,6 +269,7 @@ nav {
 .see-project-btn:hover {
   background-color: #ebebff;
 }
+
 /* The Modal (background) */
 .modal {
   position: fixed;
@@ -642,18 +646,21 @@ summary:hover .summary-chevron-up svg {
   .mainContent {
     margin-top: 100px;
   }
+
   .description {
     font-size: 45px;
   }
+
   nav {
     position: fixed;
-    top: 0px;
+    top: 0;
     padding: 20px;
     background-color: #fff;
     justify-content: space-between;
     display: flex;
     align-items: center;
   }
+
   .nav-items {
     display: block;
   }
@@ -721,6 +728,7 @@ summary:hover .summary-chevron-up svg {
 
   .langs-list-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -775,15 +783,19 @@ summary:hover .summary-chevron-up svg {
     0% {
       transform: rotate(0deg);
     }
+
     25% {
       transform: rotate(2deg);
     }
+
     50% {
-      transform: rotate(0eg);
+      transform: rotate(0deg);
     }
+
     75% {
       transform: rotate(-2deg);
     }
+
     100% {
       transform: rotate(0deg);
     }
