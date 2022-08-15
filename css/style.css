@@ -12,36 +12,14 @@ body {
   position: relative;
 }
 
-/* The header section  */
-.Header {
-  padding: 20px 0;
-}
-
 a {
   text-decoration: none;
 }
 
-.background {
-  position: absolute;
-  background-image: url("../images/background.svg");
-  background-color: #ffff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 40px;
-  width: 100%;
-  height: 718px;
-  z-index: -999;
-  border-radius: 0 0 0 90px;
+.dev-icon{
+  width: 25px;
+  opacity: 0.8;
 }
-
-.headerContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
 .logo {
   font-size: 22px;
   color: #6070ff;
@@ -76,7 +54,16 @@ a {
 .Menu {
   width: 35px;
 }
-
+ nav {
+    position: relative;
+    top: 0px;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
 .mobile-menu {
   display: none;
   position: absolute;
@@ -122,12 +109,13 @@ a {
   color: #172b4d;
   font-style: normal;
   font-weight: 700;
-  font-size: 43px;
+  font-size: 30px;
   line-height: 52px;
 }
 
 /* the main section  */
 .aboutMe {
+  max-width: 900px;
   margin-top: 20px;
   color: #344563;
   font-style: normal;
@@ -136,20 +124,18 @@ a {
   line-height: 28px;
 }
 
-.main {
-  display: flex;
-  align-items: center;
-  height: 600px;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
 .mainContent {
+  background-image: url("../images/icons/background.svg");
+  background-color: #ffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 40px;
+  width: 100%;
+  border-radius: 0 0 0 90px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 80%;
-  margin: 0 auto;
+  padding: 60px 10%;
 }
 
 .letsConnect {
@@ -178,7 +164,7 @@ a {
 }
 
 .card {
-  width: 80%;
+  width: 85%;
   display: grid;
   grid-gap: 20px;
   margin: 88px auto 0;
@@ -191,6 +177,10 @@ a {
 .card-image {
   width: 100%;
   border-radius: 8px;
+}
+
+.project-image {
+  display: none;
 }
 
 .card-title {
@@ -254,9 +244,7 @@ a {
   border: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  font-size: 14px;
   color: #303b9b;
   transition: 1s;
 }
@@ -264,37 +252,76 @@ a {
 .see-project-btn {
   margin-top: 15px;
   left: 24px;
-  top: 114px;
+  font-size: 17px;
   border-radius: 8px;
   padding: 16px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: #396df2;
   background-color: transparent;
   border: 1px solid #396df2;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
   box-shadow: 3px 5px 4px #e5e5e5;
 }
 
 .see-project-btn:hover {
   background-color: #ebebff;
 }
-
 /* The Modal (background) */
 .modal {
-  display: none;
   position: fixed;
   z-index: 1;
   padding-top: 100px;
   left: 0;
+  opacity: 0;
+  transform: scale(0);
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  backdrop-filter: blur(0.5);
-  background-color: rgba(193, 199, 208, 0.6);
+  backdrop-filter: blur(0.9);
+  background-color: rgba(193, 199, 208, 0.9);
+}
+
+.hide-modal {
+  z-index: -1;
+  opacity: 0;
+  transform: scale(0);
+  animation: hide 0.3s ease-in-out;
+}
+
+@keyframes hide {
+  from {
+    z-index: 2;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    z-index: -1;
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.show-modal {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1);
+  animation: show 0.3s ease;
+}
+
+@keyframes show {
+  from {
+    z-index: -1;
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    z-index: 2;
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Modal Content */
@@ -303,7 +330,7 @@ a {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%;
   border-radius: 10px;
   margin-bottom: 100px;
 }
@@ -315,14 +342,15 @@ a {
 }
 
 .modal-close-btn {
-  font-size: 25px;
+  font-size: 40px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  height: 10px;
   color: rgb(116, 119, 122);
 }
 
-.modal-image {
+.modal-video-container {
   margin: auto;
   width: 100%;
   margin-top: 20px;
@@ -356,17 +384,16 @@ a {
 
 /* css for about myself section */
 .aboutMyself-container {
-  position: relative;
-  top: 114px;
   background-color: #fff;
   width: 100%;
+  margin-top: 50px;
   border-radius: 0 50px 0 0;
   padding-bottom: 150px;
 }
 
 .aboutMyself-content {
   display: grid;
-  padding-top: 114px;
+  padding-top: 120px;
   max-width: 0 24px;
   width: 80%;
   margin: 0 auto 0;
@@ -427,12 +454,13 @@ details {
   font-size: 1rem;
   background: #ffff;
   border-radius: 8px;
-  position: relative;
   width: 100%;
   border-bottom: 1px solid #e2e8f0;
 }
 
 summary {
+  display: flex;
+  justify-content: space-between;
   user-select: none;
   list-style: none;
   padding: 1em;
@@ -446,14 +474,8 @@ summary::-webkit-details-marker {
   opacity: 0.5;
 }
 
-.summary-chevron-up,
-.summary-chevron-down {
+.summary-chevron-up {
   pointer-events: none;
-  position: absolute;
-  top: 0.75em;
-  right: 1em;
-  background: #ffff;
-  display: block;
 }
 
 summary:focus {
@@ -465,6 +487,8 @@ summary:hover .summary-chevron-up svg {
 }
 
 .langs-list-container {
+  list-style: none;
+  display: inline;
   cursor: default;
   padding: 1em;
   font-weight: 300;
@@ -472,29 +496,32 @@ summary:hover .summary-chevron-up svg {
 }
 
 .lang-text-icon {
+  background-color: #f7f7f9;
+  margin-bottom: 10px;
+  padding: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #f7f7f9;
-  margin-bottom: 10px;
-  list-style: none;
-  padding: 5px;
   border-radius: 8px;
+}
+
+.lang-text-icon > img{
+  width: 50px;
+  height: 50px;
 }
 
 .laug-text {
   color: #253858;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .contact-section {
-  position: relative;
-  top: 50px;
   width: 100%;
-  background-image: url("../images/background.svg");
+  background-image: url("../images/icons/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 50px;
   background-color: #6070ff;
   border-radius: 100px 0 0 0;
 }
@@ -535,7 +562,7 @@ summary:hover .summary-chevron-up svg {
   display: flex;
   justify-content: center;
   gap: 18px;
-  margin: 20px;
+  
 }
 
 .form-group {
@@ -601,7 +628,7 @@ summary:hover .summary-chevron-up svg {
 
 @media screen and (min-width: 768px) {
   .background {
-    background-image: url("../images/Header-bg-desktop.svg");
+    background-image: url("../images/icons/Header-bg-desktop.svg");
   }
 
   .Menu {
@@ -613,6 +640,21 @@ summary:hover .summary-chevron-up svg {
     display: none;
   }
 
+  .mainContent {
+    margin-top: 100px;
+  }
+  .description {
+    font-size: 45px;
+  }
+  nav {
+    position: fixed;
+    top: 0px;
+    padding: 20px;
+    background-color: #fff;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
   .nav-items {
     display: block;
   }
@@ -644,13 +686,9 @@ summary:hover .summary-chevron-up svg {
     grid-column-start: 1;
     grid-row-start: 1;
   }
-
-  .see-project-btn:active {
-    transform: translateY(6px);
-  }
-
+  
   .see-project-btn:hover {
-    background-color: #6070ff;
+    background-color: #394bf0;
     color: white;
   }
 
@@ -660,29 +698,44 @@ summary:hover .summary-chevron-up svg {
 
   /* set animation for card image on destop version */
   .card div:hover > .card-image {
-    animation: animate 1s;
-    animation-timing-function: ease-in;
+    animation: animate 2s;
+    transition: ease-in-out;
   }
 
   @keyframes animate {
-    from {
-      transform: rotate(0deg);
-      width: 100%;
+    0% {
+      transform: scale(0.95);
+      
     }
 
     50% {
-      transform: rotate(-20deg);
-      width: 90%;
+      transform: scale(1.05);
     }
 
-    to {
-      transform: rotate(0deg);
-      width: 100%;
+    75% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1);
     }
   }
 
+  .langs-list-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .lang-text-icon {
-    display: inline-block;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lang-text-icon > img {
+    width: 50px;
+    height: 50px;
   }
 
   .laug-text {
@@ -691,7 +744,7 @@ summary:hover .summary-chevron-up svg {
 
   /* the modal */
   .modal-content {
-    width: 75%;
+    width: 70%;
   }
 
   .project-details-container {
@@ -701,7 +754,7 @@ summary:hover .summary-chevron-up svg {
   /* @media query for about section */
   .aboutMyself-content {
     grid-template-columns: 1fr 1fr;
-    padding-top: 142px;
+    padding-top: 120px;
   }
 
   /* set footer line display to be none */
@@ -710,16 +763,22 @@ summary:hover .summary-chevron-up svg {
   }
 
   .contact-section {
-    background-image: url("../images/Header-bg-desktop.svg");
+    background-image: url("../images/icons/Header-bg-desktop.svg");
     background-size: cover;
     padding-bottom: 50px;
   }
 
-  .form-group > input:focus,
-  .form-group > textarea:focus {
-    font-size: 20px;
-    background-color: #e5e5e5;
-    border: 2px solid #00f;
+  .form-group > input:hover,
+  .form-group > textarea:hover {
+    animation: tilt-shaking 0.3s ease-in-out;
+  }
+
+  @keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
   }
 
   /* center form submit button */
