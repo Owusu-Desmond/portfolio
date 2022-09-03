@@ -35,6 +35,36 @@ const projects = [
     sourceLink: 'https://github.com/Owusu-Desmond/global-events',
   },
   {
+    imageSrc: './images/projects-screenshot/currencies-exchange-rates.jpg',
+    screenShotVideo: './videos/currencies-exchange-rates.mp4',
+    title: 'Currency Exchange Rates',
+    client: 'Exchange',
+    role: 'Front End Dev',
+    year: '2022',
+    description: `
+    Currencies-rates is a mobile web application that 
+    shows all currencies and their corresponding code. A user 
+    Can get the exchange rate between two currencies.
+    Currencies rates are updated every 24 hours.
+                  `,
+    tagsLanguages: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'API'],
+    privateClasses: {
+      reverseCardContent: '',
+      seeProjectBtn: 'currencies-exchange-see-project-btn',
+      modalContainer: 'currencies-exchange-tonic-modal-container',
+      modalCloseBtn: 'currencies-exchange-tonic-modal-close-btn',
+    },
+    details: `
+    Currencies-rates is a mobile web application that 
+    shows all currencies and their corresponding code. A user 
+    Can get the exchange rate between two currencies.
+    Currencies rates are updated every 24 hours.
+    Currencies-rates have a search bar that allows users to search for a currency. 
+    `,
+    liveLink: 'https://currencies-exchange-rates.netlify.app/',
+    sourceLink: 'https://github.com/Owusu-Desmond/currencies-rates',
+  },
+  {
     imageSrc: './images/projects-screenshot/awesome-books-list-page.jpg',
     screenShotVideo: './videos/awesome-books.mp4',
     title: 'Awesome Books',
